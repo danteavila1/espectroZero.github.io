@@ -6,6 +6,8 @@
     
 }
 
+/* HEADER */
+
 .header{
     display: flex;
     justify-content: space-between;
@@ -64,6 +66,20 @@
     transform: scale(1.1);
 }
 
+/* NOSOTROS */
+
+#nosotros #jumbotron {
+    background-image: url("../images/pexels-lennart-wittstock-316681.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+/* BODY */
+
 h1 {
     font-size: 64px;
     font-family: 'Raleway', sans-serif;
@@ -87,4 +103,9 @@ p {
     padding: 10px;
     margin: 5px auto 5px auto;
     max-width: 1000px;
+}
+
+.contenedor-fluido {
+    width: 100%;
+    padding: 0px;
 }
