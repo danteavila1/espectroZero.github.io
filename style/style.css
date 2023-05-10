@@ -112,15 +112,20 @@ p {
 
 
 /*CLIENTES*/
+
+#clientesp{
+    text-align: center;
+}
   /* Estilos carousel */
   
   .carousel {
     position: relative;
-    width: 100%;
+    width: 60%;
     height: 400px;
     overflow: hidden;
+    margin:auto
   }
-  
+
   .carousel__item {
     position: absolute;
     top: 0;
