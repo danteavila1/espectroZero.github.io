@@ -72,10 +72,16 @@
     background-image: url("../images/pexels-lennart-wittstock-316681.jpg");
     background-position: center;
     background-repeat: no-repeat;
+    background-color: gray;
+    background-blend-mode: multiply;
     color: white;
     text-align: center;
     padding-top: 150px;
-    padding-bottom: 150px;
+    padding-bottom: 100px;
+}
+
+#infonos {
+    margin-top: 10px;
 }
 
 /* BODY */
