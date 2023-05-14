@@ -14,7 +14,19 @@ let serv =
             "precio": 20000
         }
     ]
-}
-
+};
 
 console.log(serv.s[0].info);
+for (i in serv.s) {
+    let div = document.createElement("div");
+    div.classList.add("service");
+    let h3 = document.createElement("h3");
+    let p = document.createElement("p");
+    let nombre = document.createTextNode(serv.s[i].nombre);
+    let info = document.createTextNode(serv.s[i].info);
+    div.appendChild(h3);
+    div.appendChild(p);
+    h3.appendChild(nombre);
+    p.appendChild(info);
+    document.querySelector('#lista_servicios').appendChild(div);
+}
