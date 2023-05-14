@@ -129,13 +129,14 @@ p {
 
 #clientesp{
     text-align: center;
+    padding: 10px;
 }
   /* Estilos carousel */
   
   .carousel {
     position: relative;
-    width: 60%;
-    height: 400px;
+    width: 80%;
+    height: 450px;
     overflow: hidden;
     margin:auto
   }
