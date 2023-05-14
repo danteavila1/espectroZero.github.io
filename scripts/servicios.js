@@ -1,5 +1,6 @@
+let serv =
 {
-    "servicios": [
+    "s": [
         { 
             "id": 0,    
             "nombre": "Inspección por videollamada",
@@ -14,3 +15,6 @@
         }
     ]
 }
+
+
+console.log(serv.s[0].info);
