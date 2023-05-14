@@ -18,15 +18,35 @@ let serv =
 
 console.log(serv.s[0].info);
 for (i in serv.s) {
+    // Creacción de los elementos
     let div = document.createElement("div");
     div.classList.add("service");
     let h3 = document.createElement("h3");
-    let p = document.createElement("p");
+    let pinfo = document.createElement("p");
+    let ppre = document.createElement("p");
+    let button = document.createElement("button");
+    
+    // Convertir json a variables
     let nombre = document.createTextNode(serv.s[i].nombre);
     let info = document.createTextNode(serv.s[i].info);
-    div.appendChild(h3);
-    div.appendChild(p);
+    let precio = document.createTextNode(serv.s[i].precio);
+    let sabermas = document.createTextNode("Más información");
+    
+    // Adjuntar elementos a variables
     h3.appendChild(nombre);
-    p.appendChild(info);
+    pinfo.appendChild(info);
+    ppre.appendChild(precio);
+
+    // Capacidades del botón
+    button.addEventListener("click", test);
+
+    // Imprimir lista de elementos por nombre
+    div.appendChild(h3);
+    div.appendChild(button);
+    button.appendChild(sabermas);
     document.querySelector('#lista_servicios').appendChild(div);
+}
+
+function test() {
+    console.log("test");
 }
