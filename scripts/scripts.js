@@ -41,3 +41,43 @@ rightBtn.addEventListener('click', () => {
   });
   carouselItems[aIndex].classList.add('active');
 });
+
+// Validacion formulario
+(function(){
+  var formulario = document.getElementsByName("formulario")[0],
+      elementos = formulario.elements,
+      boton = document.getElementById("boton");
+
+  var validarNombre = function(e){
+    if (formulario.nombre.value == 0) {
+      alert("completa el campo nombre");
+      e.preventDefault();
+    }
+  };  
+  var validarEmail = function(e){
+    if (formulario.email.value == 0) {
+      alert("completa el campo email");
+      e.preventDefault();
+    }
+  }; 
+  var validarAsunto = function(e){
+    if (formulario.asunto.value == 0) {
+      alert("completa el campo asunto");
+      e.preventDefault();
+    }
+  }; 
+  var validarComentarios = function(e){
+    if (formulario.comentarios.value == 0) {
+      alert("completa el campo comentarios");
+      e.preventDefault();
+    }
+  };
+
+  var validar = function(e){
+      validarNombre(e);
+      validarEmail(e);
+      validarAsunto(e);
+      validarComentarios(e);
+  };    
+      formulario.addEventListener("submit", validar);
+}())

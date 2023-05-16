@@ -90,15 +90,15 @@
         <!-- Añadir formulario para ponerse en contacto -->
         <p>Contacto</p>
         <main>
-            <h1>Formulario de contacto</h1>
-            <h3>Escríbenos y pronto nos pondremos en contacto contigo</h3>
-            <form action="">
+            <h4>Formulario de contacto</h4>
+            <h5>Escríbenos y pronto nos pondremos en contacto contigo</h5>
+            <form action="" name="formulario" method="get">
                 <fieldset>
                    
                     <label for="nombre" class="colocar_nombre">Nombre y apellido <span class="obligatorio">*</span>
                     </label>
                     <br>
-                    <input type="text" name="nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre y apellido">
+                    <input type="text" id="nombre" size= "55" placeholder="Escribe tu nombre y apellido">
                     <br>
                     <br>
                     
@@ -106,31 +106,32 @@
                         <span class="obligatorio">*</span>
                     </label>
                     <br>
-                    <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu dirección de correo electrónico">
+                    <input type="email" id="email"  size= "55" placeholder="Escribe tu dirección de correo electrónico">
                     <br>
                     <br>
                          
                     <label for="telefono" class="colocar_telefono">Teléfono </label>
                     <br>
-                    <input type="tel" name="telefono" id="telefono" placeholder="Escribe tu teléfono">
+                    <input type="tel" id="telefono" size= "30" placeholder="Escribe tu teléfono">
                     <br>
                     <br>
         
                     <label for="asunto" class="colocar_asunto"> Asunto <span class="obligatorio">*</span>
                     </label>
                     <br>
-                    <input type="text" name="asunto" id="asunto" required="obligatorio" placeholder="Escribe un asunto">
+                    <input type="text" id="asunto" size= "55" placeholder="Escribe un asunto">
                     <br>
                     <br>
         
                     <label for="comentarios">Comentarios *</label>
                     <br>
                     <textarea name="comentarios" id="comentarios" placeholder="Deja aquí tu comentario" cols="45" rows="10"></textarea>
-        
-                    <button type="submit" name="enviar_formulario" id="enviar"><p>Enviar</p></button>
+                    <br>
+                    <br>
+                    <button type="submit" name="boton" id="boton"><p>Enviar</p></button>
         
                     <p class="aviso">
-                    <span class="obligatorio"> * </span>los campos son obligatorios
+                    <span class="obligatorio"> * </span>Los campos son obligatorios
                     </p>
         
                 </fieldset>
