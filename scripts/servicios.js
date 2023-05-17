@@ -44,7 +44,7 @@ for (i in serv.s) {
     img.alt = "Logo";
 
     // Capacidades del botón
-    button.addEventListener("click", test);
+    button.addEventListener("click", masinfo.bind(null, i), false);
 
     // Imprimir lista de elementos por nombre
     div.appendChild(h3);
@@ -54,6 +54,40 @@ for (i in serv.s) {
     document.querySelector('#lista_servicios').appendChild(div);
 }
 
-function test() {
-    console.log("test");
+function masinfo(id) {
+    // Convertir json a variables
+    let nombre = serv.s[id].nombre;
+    let info = serv.s[id].info;
+    let precio = serv.s[id].precio;
+    let imagen = serv.s[id].imagen;
+
+    const { createApp } = Vue;
+    createApp({
+        data() {
+            return {
+                nombre: nombre,
+                info: info,
+                precio: precio,
+                imagen: imagen,
+            }
+        }
+    }).mount('#modal_servicios');
+
+    // Adjuntar modal del modal
+    // let modal = document.querySelector("#modal_servicios");
+    // let modalelements = modal.querySelectorAll(".modser");
+    // for (i in modalelements) {
+    //     if (modalelements[i].hasChildNodes == true) {
+    //         modalelements[i].removeChild(modalelements[i].firstChild);
+    //     }
+    // };
+    // modalelements[1].appendChild(nombre);
+    // modalelements[2].appendChild(info);
+    // modalelements[3].appendChild(precio);
+    // modal.querySelector("img").src = "./images/"+imagen;
+
+}
+
+function hide() {
+    this.classList.add(hide);
 }
