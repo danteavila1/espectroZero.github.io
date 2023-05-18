@@ -18,6 +18,7 @@ let serv =
     ]
 };
 
+let modalchild = false;
 
 for (i in serv.s) {
     // Creacción de los elementos
@@ -56,36 +57,16 @@ for (i in serv.s) {
 
 function masinfo(id) {
     // Convertir json a variables
-    let nombre = serv.s[id].nombre;
-    let info = serv.s[id].info;
-    let precio = serv.s[id].precio;
-    let imagen = serv.s[id].imagen;
+    let serv_array = [serv.s[id].nombre, serv.s[id].info, serv.s[id].precio];
 
-    const { createApp } = Vue;
-    createApp({
-        data() {
-            return {
-                nombre: nombre,
-                info: info,
-                precio: precio,
-                imagen: imagen,
-            }
-        }
-    }).mount('#modal_servicios');
+    // Recargar modal con los elementos correctos
+    let modal = document.querySelector("#modal_servicios");
+    let modalelements = modal.querySelectorAll(".modser");
 
-    // Adjuntar modal del modal
-    // let modal = document.querySelector("#modal_servicios");
-    // let modalelements = modal.querySelectorAll(".modser");
-    // for (i in modalelements) {
-    //     if (modalelements[i].hasChildNodes == true) {
-    //         modalelements[i].removeChild(modalelements[i].firstChild);
-    //     }
-    // };
-    // modalelements[1].appendChild(nombre);
-    // modalelements[2].appendChild(info);
-    // modalelements[3].appendChild(precio);
-    // modal.querySelector("img").src = "./images/"+imagen;
-
+    for (n = 0; n < modalelements.length; n++) {
+        modalelements[n].innerHTML = serv_array[n];
+    }
+    modal.querySelector("img").src = "./images/" + serv.s[id].imagen;
 }
 
 function hide() {
