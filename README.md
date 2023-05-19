@@ -1,6 +1,6 @@
 # espectroZero
 ## Objetivos actuales:
-- Completar la lista de servicios.
+- ~~Completar la lista de servicios.~~
 - Armar el CSS de Servicios.
 - Investigar API Rest. 
 
