@@ -336,8 +336,11 @@ form label{
 form fieldset button{
   background-color: #858383;
   border-radius: 5px;
-  width: 100px;
-  margin-left: 10px;
+  width: 380px;
+  height: 45px;
+  margin-left: 155px;
+  border-color: black;
+  border-style: solid;
 }
 form fieldset button :hover{
   background-color: #bbbbbb;
