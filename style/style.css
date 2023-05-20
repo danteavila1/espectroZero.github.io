@@ -153,6 +153,10 @@ h2 {
     font-size: 48px;
     font-weight: 700;
 }
+h3 {
+  font-size: 36px;
+  font-weight: 700;
+}
 
 ul {
   list-style: none;
@@ -333,16 +337,73 @@ form label{
   margin-left: 10px;
 }
 
-form fieldset button{
+form fieldset button {
   background-color: #858383;
   border-radius: 5px;
-  width: 380px;
+  width: 100px;
   height: 45px;
-  margin-left: 155px;
+  margin-left: 100px;
   border-color: black;
   border-style: solid;
 }
 form fieldset button :hover{
   background-color: #bbbbbb;
   border-radius: 5px;
+}
+
+/* Testimonios */
+.testimonios_contenedor{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.testimonios_caja{
+  width: 500px;
+  box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  padding: 20px;
+  margin: 15px;
+  cursor: pointer;
+}
+.perfil_img{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 30px;
+}
+.perfil_img img{
+  width: 100%;
+  height: 100%;
+  object-fit: center;
+}
+.perfil{
+  display: flex;
+  align-items: center;
+}
+.name_user{
+  display: flex;
+  flex-direction: column;   
+}
+.name_user strong{
+  color: #3d3d3d;
+  font-size: 1.3rem;
+}
+.name_user span{
+  color: #979797;
+  font-size: 1.1rem;
+}
+.resenas{
+  color: #f9d71c;
+}
+.caja_top{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.comentarios_clientes p{
+  color: #4b4b4b;
 }
