@@ -56,7 +56,7 @@ fetch('./scripts/resenas.json')
             name_user.appendChild(usuario);
             name_user.appendChild(spanRes);
             
-            
+            caja_top.appendChild(starsBox);
             for (i in stars) {
                 starsBox.appendChild(estrellas[i]);
             }
