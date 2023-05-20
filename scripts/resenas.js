@@ -34,9 +34,9 @@ fetch('./scripts/resenas.json')
 
             // Crear i por cantidad de estrellas
             let estrellas = [];
-            for (i in stars) {
-                estrellas.push(document.createElement("i"));
-                estrellas[i].classList.add("fas fa-star");
+            for (i = 0; i < stars; i++) {
+                estrellas[i] = document.createElement("i");
+                estrellas[i].classList.add("fas","fa-star");
             }
             
 
@@ -57,7 +57,7 @@ fetch('./scripts/resenas.json')
             name_user.appendChild(spanRes);
             
             caja_top.appendChild(starsBox);
-            for (i in stars) {
+            for (i = 0; i < stars; i++) {
                 starsBox.appendChild(estrellas[i]);
             }
 
