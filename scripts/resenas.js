@@ -16,27 +16,29 @@ fetch('./scripts/resenas.json')
             perfil_img.classList.add("perfil_img");
             let img = document.createElement("img");
             let name_user = document.createElement("div");
+            name_user.classList.add("name_user")
             let usuario = document.createElement("strong");
             let spanRes = document.createElement("span");
             let starsBox = document.createElement("div");
             starsBox.classList.add("resenas");
-            stars.classList.add("fas fa-star");
             let commentBox = document.createElement("div");
             commentBox.classList.add("comentarios_clientes");
-            let comentario = documents.createElement("p");
+            let comentario = document.createElement("p");
         
             // Json a variables
-            ppic = resenas[i].profile.photo;
-            names = resenas[i].profile.name;
-            user = resenas[i].profile.user;
-            stars = resenas[i].stars;
-            comment = resenas[i].comment;
+            let ppic = resenas[i].profile.photo;
+            let names = document.createTextNode(resenas[i].profile.name);
+            let user = document.createTextNode(resenas[i].profile.user);
+            let stars = resenas[i].stars;
+            let comment = document.createTextNode(resenas[i].comment);
 
             // Crear i por cantidad de estrellas
             let estrellas = [];
             for (i in stars) {
                 estrellas.push(document.createElement("i"));
+                estrellas[i].classList.add("fas fa-star");
             }
+            
 
             // Adjuntar variables a elementos
             img.src = ppic;
@@ -53,10 +55,14 @@ fetch('./scripts/resenas.json')
             caja_top.appendChild(name_user);
             name_user.appendChild(usuario);
             name_user.appendChild(spanRes);
-            spanRes.appendChild(estrellas);
+            
+            
+            for (i in stars) {
+                starsBox.appendChild(estrellas[i]);
+            }
 
             caja.appendChild(commentBox);
             commentBox.appendChild(comentario);
-            document.querySelector('testimonios_contenedor').appendChild(caja);
+            document.querySelector('.testimonios_contenedor').appendChild(caja);
         }
     })
