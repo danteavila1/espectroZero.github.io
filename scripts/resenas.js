@@ -36,7 +36,7 @@ fetch('./scripts/resenas.json')
             let estrellas = [];
             for (i = 0; i < stars; i++) {
                 estrellas[i] = document.createElement("i");
-                estrellas[i].classList.add("fas","fa-star");
+                estrellas[i].classList.add("fa","fa-star");
             }
             
 
@@ -52,7 +52,7 @@ fetch('./scripts/resenas.json')
             perfil.appendChild(perfil_img);
             perfil_img.appendChild(img);
 
-            caja_top.appendChild(name_user);
+            perfil.appendChild(name_user);
             name_user.appendChild(usuario);
             name_user.appendChild(spanRes);
             
