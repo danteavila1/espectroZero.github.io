@@ -1,0 +1,20 @@
+[
+    {
+        "profile": {
+            "photo": "./images/logo-simple.png",
+            "name": "test",
+            "user": "@test"
+        },
+        "stars": 5,
+        "comment": "Test"
+    },
+    {
+        "profile": {
+            "photo": "./images/logo-simple.png",
+            "name": "test b",
+            "user": "@test-b"
+        },
+        "stars": 2,
+        "comment": "lorem ipsum etc etc etc"
+    }
+]
