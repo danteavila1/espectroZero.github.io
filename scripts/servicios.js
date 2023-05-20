@@ -70,10 +70,3 @@ fetch('./scripts/servicios.json')
     .catch(error => {
         console.error('Error: ', error);
     })
-
-
-
-
-function hide() {
-    this.classList.add(hide);
-}
