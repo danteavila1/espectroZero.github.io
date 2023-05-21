@@ -2,7 +2,9 @@
 ## Objetivos actuales:
 - ~~Completar la lista de servicios.~~
 - Armar el CSS de Servicios.
-- Investigar API Rest. 
+- ~~Investigar API Rest.~~
+- ~~Cargar lista de reseñas.~~
+- Terminar el CSS.
 
 ## El TPO deberá cumplir con los siguientes requisitos:
 - ~~Poseer al menos 4 páginas html, siendo su temática libre. En caso de ser un Sitio Web estilo One Page, el mismo deberá tener al menos 4 secciones.~~
