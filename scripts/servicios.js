@@ -13,30 +13,25 @@ fetch('./scripts/servicios.json')
             let pinfo = document.createElement("p");
             let ppre = document.createElement("p");
             let img = document.createElement("img");
-            let button = document.createElement("button");
             
             // Convertir json a variables
             let nombre = document.createTextNode(serv[i].nombre);
             let info = document.createTextNode(serv[i].info);
             let precio = document.createTextNode(serv[i].precio);
             let imagen = serv[i].imagen;
-            let sabermas = document.createTextNode("Más información");
             
             // Adjuntar elementos a variables
             h3.appendChild(nombre);
             pinfo.appendChild(info);
             ppre.appendChild(precio);
-            img.src = 'images/' + imagen;
-            img.alt = "Logo";
+            div.style.backgroundImage = 'url(' + imagen + ')';
         
             // Capacidades del botón
-            button.addEventListener("click", masinfo.bind(null, i), false);
+            div.addEventListener("click", masinfo.bind(null, i), false);
         
             // Imprimir lista de elementos por nombre
             div.appendChild(h3);
-            div.appendChild(button);
             div.appendChild(img);
-            button.appendChild(sabermas);
             document.querySelector('#lista_servicios').appendChild(div);
         }
         
@@ -52,7 +47,7 @@ fetch('./scripts/servicios.json')
             for (n = 0; n < modalelements.length; n++) {
                 modalelements[n].innerHTML = serv_array[n];
             }
-            modal.querySelector("img").src = "./images/" + serv[id].imagen;
+            modal.querySelector("img").src = serv[id].imagen;
 
             modal.style.display = 'block';
             
