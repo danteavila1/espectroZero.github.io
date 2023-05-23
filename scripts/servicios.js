@@ -17,6 +17,7 @@ fetch('./scripts/servicios.json')
             let nombre = document.createTextNode(serv[i].nombre);
             let info = document.createTextNode(serv[i].info);
             let precio = document.createTextNode(serv[i].precio);
+            let num = document.createTextNode(serv[i].id);
             let imagen = serv[i].imagen;
             
             // Adjuntar elementos a variables
@@ -31,6 +32,12 @@ fetch('./scripts/servicios.json')
             // Imprimir lista de elementos por nombre
             div.appendChild(h3);
             document.querySelector('#lista_servicios').appendChild(div);
+
+            // Completar form
+            let option = document.createElement("option");
+            option.appendChild(nombre);
+            option.value = serv[i].id;
+            document.querySelector('#servForm').appendChild(option);
         }
         
         function masinfo(id) {
@@ -62,3 +69,7 @@ fetch('./scripts/servicios.json')
     .catch(error => {
         console.error('Error: ', error);
     })
+
+function llenarForm() {
+    
+}

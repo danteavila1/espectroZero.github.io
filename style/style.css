@@ -481,7 +481,8 @@ form {
 }
 
 input,
-textarea {
+textarea,
+select {
   padding: 10px;
   padding-right: 10px;
   border-radius: 5px;
@@ -493,7 +494,8 @@ textarea {
 }
 
 form fieldset input,
-form fieldset textarea {
+form fieldset textarea,
+form fieldset select {
   background-color: #bbbbbb;
   color: #0e1a1f;
 }
@@ -520,6 +522,11 @@ form fieldset button {
 form fieldset button :hover {
   background-color: #bbbbbb;
   border-radius: 5px;
+}
+
+form option {
+  color: #0e1a1f;
+  background-color: #bbbbbb;
 }
 
 /* Testimonios */
