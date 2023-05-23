@@ -18,7 +18,6 @@ fetch('./scripts/servicios.json')
             let nombreOption = document.createTextNode(serv[i].nombre);
             let info = document.createTextNode(serv[i].info);
             let precio = document.createTextNode(serv[i].precio);
-            let num = document.createTextNode(serv[i].id);
             let imagen = serv[i].imagen;
             
             // Adjuntar elementos a variables
@@ -40,6 +39,11 @@ fetch('./scripts/servicios.json')
             option.value = serv[i].id;
             document.querySelector('#servForm').appendChild(option);
         }
+        let otroOption = document.createElement("option");
+        let otroOptiontxt = document.createTextNode("Otro");
+        otroOption.appendChild(otroOptiontxt);
+        otroOption.value = i + 1;
+        document.querySelector('#servForm').appendChild(otroOption);
         
         function masinfo(id) {
             // Convertir json a variables
