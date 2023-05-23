@@ -12,7 +12,6 @@ fetch('./scripts/servicios.json')
             let h3 = document.createElement("h3");
             let pinfo = document.createElement("p");
             let ppre = document.createElement("p");
-            let img = document.createElement("img");
             
             // Convertir json a variables
             let nombre = document.createTextNode(serv[i].nombre);
@@ -31,13 +30,12 @@ fetch('./scripts/servicios.json')
         
             // Imprimir lista de elementos por nombre
             div.appendChild(h3);
-            div.appendChild(img);
             document.querySelector('#lista_servicios').appendChild(div);
         }
         
         function masinfo(id) {
             // Convertir json a variables
-            let serv_array = [serv[id].nombre, serv[id].info, serv[id].precio];
+            let serv_array = [serv[id].nombre, serv[id].info, "Precio: $" + serv[id].precio];
         
             // Recargar modal con los elementos correctos
             let modal = document.querySelector("#modal_servicios");
@@ -47,7 +45,6 @@ fetch('./scripts/servicios.json')
             for (n = 0; n < modalelements.length; n++) {
                 modalelements[n].innerHTML = serv_array[n];
             }
-            modal.querySelector("img").src = serv[id].imagen;
 
             modal.style.display = 'block';
             

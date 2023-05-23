@@ -203,28 +203,43 @@ p {
 }
 
 #lista_servicios .service {
-  border: 1px black solid;
-  margin: 5px;
-  padding: 2px;
-  background-color: #142b35;
+  box-shadow: none;
+  background-color: grey;
+  background-blend-mode: multiply;
+  border: 0 solid #aaa;
+  border: 0.1px solid #eee;
+  border-radius: 0;
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 250px;
   width: 30%;
   min-width: 200px;
+  cursor: pointer;
+  transition: transform .2s;
+  overflow: hidden;
 }
+
+#lista_servicios .service:hover {
+  transform: scale(1.1);
+}
+
 
 #lista_servicios .service h3 {
   text-align: center;
+  padding: 20% 10%;
+  font-size: 130%;
 }
 
 #lista_servicios .service button {
-  color: white;
+  color: aqua;
   background-color: #0e1a1f;
-  margin: 5px auto 5px auto;
-  padding: 2px;
-}
-
-#lista_servicios .service img {
-  width: 60%;
-  margin: 5px auto 5px auto;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  font-weight: 700;
+  line-height: 20px;
 }
 
 #modal_servicios {
@@ -243,6 +258,7 @@ p {
   background-color: #0e1a1f;
   margin: 15% auto;
   padding: 20px;
+  padding-bottom: 40px;
   border: 1px solid #858383;
   width: 80%;
 }
@@ -259,6 +275,15 @@ p {
   color: white;
   text-decoration: none;
   cursor: pointer;
+}
+
+#modal_contenido h4 {
+  float: left;
+  margin-bottom: 20px;
+}
+
+#modal_contenido button {
+  float: right;
 }
 
 /*CLIENTES*/
