@@ -256,11 +256,15 @@ p {
 
 #modal_contenido {
   background-color: #0e1a1f;
-  margin: 15% auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: auto;
   padding: 20px;
-  padding-bottom: 40px;
   border: 1px solid #858383;
-  width: 80%;
+  width: 60%;
+  max-width: 500px;
 }
 
 .close {
@@ -277,13 +281,38 @@ p {
   cursor: pointer;
 }
 
+#modal_contenido h3 {
+  font-size: 26px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+#modal_contenido p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
 #modal_contenido h4 {
   float: left;
   margin-bottom: 20px;
+  margin-left: 5%;
 }
 
 #modal_contenido button {
   float: right;
+  margin-right: 10%;
+  background-color: #0e1a1f;
+  color: white;
+  padding: 4px;
+  border: white 1px solid;
+}
+
+#modal_contenido button:hover {
+  border: white 2px solid;
+}
+
+#modal_contenido button:active {
+  color: gray;
 }
 
 /*CLIENTES*/
