@@ -425,7 +425,7 @@ p {
 }
 
 .footer-links {
-  width: 25%;
+  width: 33%;
   padding: 0 15px;
 }
 
@@ -609,9 +609,7 @@ form fieldset button :hover {
     max-width: 600px;
     margin-left: 15px;
   }
-  .footer-links {
-    width: 33%;
-  }
+
 
 }
 
