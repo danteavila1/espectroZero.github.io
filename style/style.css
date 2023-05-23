@@ -605,11 +605,13 @@ form fieldset button :hover {
   .header .logo img {
     max-height: 150px;
   }
-
-
-
-
-
+  .contenedorFooter {
+    max-width: 600px;
+    margin-left: 15px;
+  }
+  .footer-links {
+    width: 33%;
+  }
 
 }
 
