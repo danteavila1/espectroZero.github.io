@@ -15,6 +15,7 @@ fetch('./scripts/servicios.json')
             
             // Convertir json a variables
             let nombre = document.createTextNode(serv[i].nombre);
+            let nombreOption = document.createTextNode(serv[i].nombre);
             let info = document.createTextNode(serv[i].info);
             let precio = document.createTextNode(serv[i].precio);
             let num = document.createTextNode(serv[i].id);
@@ -35,7 +36,7 @@ fetch('./scripts/servicios.json')
 
             // Completar form
             let option = document.createElement("option");
-            option.appendChild(nombre);
+            option.appendChild(nombreOption);
             option.value = serv[i].id;
             document.querySelector('#servForm').appendChild(option);
         }
@@ -48,6 +49,9 @@ fetch('./scripts/servicios.json')
             let modal = document.querySelector("#modal_servicios");
             let modalelements = modal.querySelectorAll(".modser");
             let span = modal.querySelector(".close");
+            let button = modal.querySelector("#contratar");
+            const llenarFormEvLi = () => llenarForm(id);
+            
         
             for (n = 0; n < modalelements.length; n++) {
                 modalelements[n].innerHTML = serv_array[n];
@@ -57,19 +61,28 @@ fetch('./scripts/servicios.json')
             
             span.onclick = function() {
                 modal.style.display = 'none';
+                button.removeEventListener('click', llenarFormEvLi);
             }
             
             window.onclick = function(event) {
                 if (event.target == modal) {
-                  modal.style.display = 'none';
+                    modal.style.display = 'none';
+                    button.removeEventListener('click', llenarFormEvLi);
+                    return;
                 }
             }
+            button.addEventListener('click', llenarFormEvLi);
+            function llenarForm(id) {
+                modal.style.display = 'none';
+                let contactoDiv = document.querySelector('form');
+                contactoDiv.scrollIntoView({behavior: 'smooth'});
+                let servicioSelect = document.querySelector('#servForm');
+                servicioSelect.selectedIndex = id;
+            }
+            
         }
     })
     .catch(error => {
         console.error('Error: ', error);
     })
 
-function llenarForm() {
-    
-}
