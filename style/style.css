@@ -613,18 +613,7 @@ form option {
 
 /* BREAKPOINTS*/
 
-/* Ultra small */
-@media only screen and (max-width: 330px) { 
-  .carousel {
-    height: 250px;
-  }
-  .footer-links {
-    width: 80%;
-  }
-  .videoContainer {
-    display: none;
-  }
-}
+
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
@@ -635,6 +624,10 @@ form option {
 
   .logoNosotros img {
     margin-top: 15px;
+  }
+
+  #logoImg {
+    display: none;
   }
 
   .header {
@@ -660,11 +653,41 @@ form option {
   }
 }
 
+/* Ultra small */
+@media only screen and (max-width: 330px) { 
+  .carousel {
+    height: 250px;
+  }
+  .footer-links {
+    width: 80%;
+  }
+  .showcase {
+    margin: 2%;
+    padding: 2%;
+  }
+  .videoContainer {
+    display: none;
+  }
+  div.contenedorNosotros {
+    margin: 10px;
+    padding: 2px;
+    align-items: center;
+  }
+  div.contenedorNosotros h3 {
+    font-size: 16px;
+    
+  }
+}
+
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
   div.contenedorNosotros h3 {
     text-align: justify;
     font-size: 25px;
+  }
+
+  #logoImgSmall {
+    display:none;
   }
 }
 /* Large devices (laptops/desktops, 992px and up) */
