@@ -503,6 +503,9 @@ select {
   width: 80%;
   margin-top: 5px;
   margin-left: 7%;
+  font-family: 'Playfair', serif;
+  font-weight: 700;
+  font-size: 0.8em;
 }
 
 form fieldset input,
