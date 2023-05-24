@@ -437,7 +437,7 @@ p {
 }
 
 .footer-links {
-  width: 25%;
+  width: 33%;
   padding: 0 15px;
 }
 
@@ -624,6 +624,12 @@ form option {
   .header .logo img {
     max-height: 150px;
   }
+  .contenedorFooter {
+    max-width: 600px;
+    margin-left: 15px;
+  }
+
+
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */

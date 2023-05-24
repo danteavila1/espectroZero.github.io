@@ -2,7 +2,7 @@
     { 
         "id": 0,    
         "nombre": "Inspección por videollamada",
-        "info": "Con nuestra tecnología de última generación, tenemos la posibilidad de evaluar la existencia de amenazas sobrenaturales de forma remota y determinar el nivel de riesgo fantasmagórico. Si contrata este servicio, además recibirá un talismán virtual de protección en formato JPG. Nuestros expertos pueden ofrecer asistencia en cualquier parte del mundo y en español, tagalog y vietnamita.",
+        "info": "Con nuestra tecnología de última generación, tenemos la posibilidad de evaluar la existencia de amenazas sobrenaturales de forma remota y determinar el nivel de riesgo fantasmagórico. Si contrata este servicio, además recibirá un talismán virtual de protección en formato JPG. Nuestros expertos pueden ofrecer asistencia en cualquier parte del mundo, en español, tagalog y vietnamita.",
         "precio": 5000,
         "imagen": "./images/telefono.jpg"
     },
@@ -23,21 +23,21 @@
     {
         "id": 3,
         "nombre": "Hospitales y edificios abandonados",
-        "info": "Ambos tipos de lugares atráen muchas energías negativas y los espectros que los rodean suelen alimentarse de ellas, para eliminarlos, nuestros profesionales podrán capturarlos en contenedores especiales, y además decorar todas las habitaciones con globos y adornos, ¡auyentarán hasta al fantasma más emo que los vea!",
+        "info": "Ambos tipos de lugares atraen muchas energías negativas y los espectros que los rodean suelen alimentarse de ellas, para eliminarlos, nuestros profesionales podrán capturarlos en contenedores especiales, y además decorar todas las habitaciones con globos y adornos, ¡ahuyentarán hasta al fantasma más emo que los vea!",
         "precio": 50000,
         "imagen": "./images/hospital.jpg"
     },
     {
         "id": 4,
         "nombre": "Prisiones y estaciones de policía antiguas",
-        "info": "Estos lugares no solo generan muchas energías negativas sino que además los espíritus que habitan sus pasillos suelen ser violentos. ¡Nuestros profesionales para enfrentar estas amenazas necesitan usar su astucia y han entrenado en el jujitsu espiritual y el kickboxing fantasmagórico para asegurarse de no perder en el ring contra ningún maleante! (El precio es más que nada para cubrirles el seguro).",
+        "info": "Estos lugares no solo generan muchas energías negativas, sino que además los espíritus que habitan sus pasillos suelen ser violentos. ¡Nuestros profesionales, para enfrentar estas amenazas, necesitan usar su astucia y han entrenado en el jiujitsu espiritual y el kickboxing fantasmagórico para asegurarse de no perder en el ring contra ningún maleante! (El precio es más que nada para cubrirles el seguro).",
         "precio": 70000,
         "imagen": "./images/prision.jpg"
     },
     {
         "id": 5,
         "nombre": "Mansiones abandonadas, cementerios antiguos y altares prohibidos",
-        "info": "Si usted vive en uno de estos lugares, su vida corre mucho peligro, ¡pero no tema! ¡Nuestros profesionales podrán ponerle en contacto en instantes con una inmoviliaria para conseguirle un nuevo lugar donde vivir! Nuestros profesionales se rehusan a ir.",
+        "info": "Si usted vive en uno de estos lugares, su vida corre mucho peligro, ¡pero no tema! ¡Nuestros profesionales podrán ponerle en contacto en instantes con una inmobiliaria para conseguirle un nuevo lugar donde vivir! Nuestros profesionales se rehúsan a ir.",
         "precio": 5000,
         "imagen": "./images/mansion.jpg"
     }
