@@ -85,7 +85,8 @@ rightBtn.addEventListener('click', () => {
         obligatorioMensaje = "Complete los siguientes campos: ";
         return;
       }
-      console.log("asd");
+      alert("¡Muchas gracias por comunicarte, " + formulario.nombre.value + "! Muy pronto nuestro equipo se pondrá en contacto con usted/es por su mensaje.");
+      
   };    
       formulario.addEventListener("submit", validar);
 }())
