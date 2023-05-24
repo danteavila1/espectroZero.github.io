@@ -613,11 +613,28 @@ form option {
 
 /* BREAKPOINTS*/
 
+/* Ultra small */
+@media only screen and (max-width: 330px) { 
+  .carousel {
+    height: 250px;
+  }
+  .footer-links {
+    width: 80%;
+  }
+  .videoContainer {
+    display: none;
+  }
+}
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   div.contenedorNosotros h3 {
     text-align: center;
     font-size: 20px;
+  }
+
+  .logoNosotros img {
+    margin-top: 15px;
   }
 
   .header {
