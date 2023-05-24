@@ -242,6 +242,18 @@ p {
   line-height: 20px;
 }
 
+@media only screen and (max-width:600px) {
+  #lista_servicios .service {
+    margin: auto;
+    width: 85%;
+    height: 170px;
+    margin-bottom: 5px;
+  }
+  #lista_servicios .service h3 {
+    padding: 30px;
+  }
+}
+
 #modal_servicios {
   display: none;
   width: 100%;

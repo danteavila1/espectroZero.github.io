@@ -42,7 +42,7 @@ fetch('./scripts/servicios.json')
         let otroOption = document.createElement("option");
         let otroOptiontxt = document.createTextNode("Otro");
         otroOption.appendChild(otroOptiontxt);
-        otroOption.value = i + 1;
+        otroOption.value = "otro";
         document.querySelector('#servForm').appendChild(otroOption);
         
         function masinfo(id) {
