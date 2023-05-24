@@ -559,7 +559,6 @@ form option {
   background-color: white;
   padding: 20px;
   margin: 15px;
-  cursor: pointer;
 }
 
 .perfil_img {
@@ -604,6 +603,7 @@ form option {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 20px;
+  cursor: pointer;
 }
 
 .comentarios_clientes p {
@@ -622,11 +622,17 @@ form option {
 
   .header {
     max-width: 600px;
+    padding: 5%;
   }
 
-  .header .logo img {
-    max-height: 150px;
+  #logo_header {
+    display: none;
   }
+
+  .header .nav-links li {
+    padding: 3px;
+  }
+
   .contenedorFooter {
     max-width: 600px;
     margin-left: 15px;
