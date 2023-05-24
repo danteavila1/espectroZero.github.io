@@ -48,27 +48,29 @@ rightBtn.addEventListener('click', () => {
       elementos = formulario.elements,
       boton = document.getElementById("boton");
 
+  let obligatorioMensaje = "Complete los siguientes campos: ";
+
   var validarNombre = function(e){
     if (formulario.nombre.value == 0) {
-      alert("completa el campo nombre");
+      obligatorioMensaje = obligatorioMensaje + ("Nombre, ");
       e.preventDefault();
     }
   };  
   var validarEmail = function(e){
     if (formulario.email.value == 0) {
-      alert("completa el campo email");
+      obligatorioMensaje = obligatorioMensaje + ("Email, ");
       e.preventDefault();
     }
   }; 
   var validarAsunto = function(e){
     if (formulario.asunto.value == 0) {
-      alert("completa el campo asunto");
+      obligatorioMensaje = obligatorioMensaje + ("Asunto, ");
       e.preventDefault();
     }
   }; 
   var validarComentarios = function(e){
     if (formulario.comentarios.value == 0) {
-      alert("completa el campo comentarios");
+      obligatorioMensaje = obligatorioMensaje + ("Comentario.");
       e.preventDefault();
     }
   };
@@ -78,6 +80,12 @@ rightBtn.addEventListener('click', () => {
       validarEmail(e);
       validarAsunto(e);
       validarComentarios(e);
+      if (obligatorioMensaje != "Complete los siguientes campos: ") {
+        alert(obligatorioMensaje);
+        obligatorioMensaje = "Complete los siguientes campos: ";
+        return;
+      }
+      console.log("asd");
   };    
       formulario.addEventListener("submit", validar);
 }())
