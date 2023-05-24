@@ -86,7 +86,7 @@ body {
 
 .showcase {
   position: relative;
-  height: 100vh;
+  height: 80vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -129,8 +129,8 @@ body {
 }
 
 .logoNosotros img {
-  max-height: 100%;
-  width: 100%;
+  max-height: 70%;
+  width: 70%;
 }
 
 .contenedorNosotros {
@@ -140,16 +140,10 @@ body {
   max-width: 1000px;
 }
 
-#nosotros #jumbotron {
-  color: white;
-  text-align: center;
-  padding-top: 150px;
-  padding-bottom: 100px;
+.contenedorNosotros p {
+  font-size: 22px;
 }
 
-#infonos {
-  margin-top: 50px;
-}
 
 /* BODY */
 body {
@@ -181,12 +175,6 @@ p {
   font-weight: 600;
 }
 
-.contenedorNosotros {
-  width: 85%;
-  padding: 10px;
-  margin: 5px auto 5px auto;
-  max-width: 1000px;
-}
 
 .contenedor-fluido {
   width: 100%;
@@ -368,6 +356,13 @@ p {
 
 /* Estilos carousel */
 
+.separador-clientess{
+    display: grid;
+    place-items: center;
+    margin-bottom: 0;
+    padding-bottom: 30px;
+}
+
 .carousel {
   position: relative;
   width: 80%;
@@ -417,6 +412,13 @@ p {
 
 .carousel__btn--right {
   right: 20px;
+}
+
+.opiniones {
+  display: grid;
+  place-items: center;
+  margin-bottom: 0;
+  padding-bottom: 30px;
 }
 
 /* footer */
